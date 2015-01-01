@@ -1,0 +1,808 @@
+[
+    {
+        "id": ".DS_Store",
+        "level": "",
+        "description": "",
+        "info": ""
+    },
+    {
+        "id": "10",
+        "name": "Back to Back",
+        "type": "dailypower",
+        "level": "Warlord Utility 6",
+        "description": "You take heart from the ally guarding your back.",
+        "info": " Daily Martial , Stance Minor Action Personal "
+    },
+    {
+        "id": "1000",
+        "name": "Tide of Iron",
+        "type": "atwillpower",
+        "level": "Fighter Attack 1",
+        "description": "After each swing, you use your shield to shove your foe backward, and then you surge ahead.",
+        "info": " At-Will Martial , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10000",
+        "name": "Mighty Surge",
+        "type": "dailypower",
+        "level": "Fighter Utility 10",
+        "description": "You dig deep to find the strength you need to overcome your foes.",
+        "info": " Daily Healing , Martial Minor Action Personal "
+    },
+    {
+        "id": "10001",
+        "name": "Leaping Assault",
+        "type": "encounterpower",
+        "level": "Fighter Attack 13",
+        "description": "You spring through your foes to rip apart an enemy with a savage swing.",
+        "info": " Encounter Martial , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10002",
+        "name": "Hurricane Strike",
+        "type": "dailypower",
+        "level": "Fighter Attack 15",
+        "description": "You swing your blade around you and the momentum carries you forward so you can do it again.",
+        "info": " Daily Martial , Weapon Standard Action Close burst 1 "
+    },
+    {
+        "id": "10003",
+        "name": "Warding Steel",
+        "type": "encounterpower",
+        "level": "Fighter Utility 16",
+        "description": "You whip your weapon up to intercept your enemies’ attacks.",
+        "info": " Encounter Martial Minor Action Personal "
+    },
+    {
+        "id": "10004",
+        "name": "Bitter Harvest",
+        "type": "encounterpower",
+        "level": "Fighter Attack 17",
+        "description": "You smash through the pressing host to set your eyes and your weapon on your chosen foe.",
+        "info": " Encounter Martial , Weapon Standard Action Close burst 1 "
+    },
+    {
+        "id": "10005",
+        "name": "Toppling Finish",
+        "type": "dailypower",
+        "level": "Fighter Attack 19",
+        "description": "In one smooth stroke, you topple the enemy and bring your weapon back to plunge it down into its struggling body.",
+        "info": " Daily Martial , Reliable , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10006",
+        "name": "Battle Furor",
+        "type": "encounterpower",
+        "level": "Fighter Utility 22",
+        "description": "When you draw upon your reserves, your fury rises and adds terrible weight to your attacks.",
+        "info": " Encounter Martial , Stance Minor Action Personal "
+    },
+    {
+        "id": "10007",
+        "name": "Slash and Kick",
+        "type": "encounterpower",
+        "level": "Fighter Attack 23",
+        "description": "Your weapon tears through your foe, allowing you to follow up with a forceful kick to send the enemy sprawling.",
+        "info": " Encounter Martial , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10008",
+        "name": "Time to Die",
+        "type": "dailypower",
+        "level": "Fighter Attack 25",
+        "description": "You’ ve battled this enemy long enough: Putting all your strength behind the attack, you fling the foe away and then leap after it to bring the battle to a bloody close.",
+        "info": " Daily Martial , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10009",
+        "name": "Wild Offensive",
+        "type": "encounterpower",
+        "level": "Fighter Attack 27",
+        "description": "Your weapon moves with astonishing speed, leaving those you strike reeling in pain.",
+        "info": " Encounter Martial , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10010",
+        "name": "Image of Death",
+        "type": "dailypower",
+        "level": "Fighter Attack 29",
+        "description": "As your enemies fall beneath your blade, you become the very image of death—a menacing presence sparking terror in all who behold you.",
+        "info": " Daily Martial , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10011",
+        "name": "Grim Warning",
+        "type": "encounterpower",
+        "level": "Great Weapon Master Attack 11",
+        "description": "A vicious strike from your weapon reminds the enemy why attacking you is such a bad idea.",
+        "info": " Encounter Martial , Weapon Immediate Reaction Melee weapon "
+    },
+    {
+        "id": "10012",
+        "name": "Scattering Strike",
+        "type": "dailypower",
+        "level": "Great Weapon Master Attack 20",
+        "description": "After delivering a crippling strike to your foe, you reverse the weapon to clear yourself some space.",
+        "info": " Daily Martial , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10013",
+        "name": "Blocking Maneuver",
+        "type": "encounterpower",
+        "level": "Great Weapon Master Utility 12",
+        "description": "Adjusting your grip, you move your weapon to intercept the attack.",
+        "info": " Encounter Martial Immediate Interrupt Personal "
+    },
+    {
+        "id": "10014",
+        "name": "Bitter Strike",
+        "type": "encounterpower",
+        "level": "Siegebreaker Attack 11",
+        "description": "So fierce is your attack that your enemy panics, ignoring your allies for one disastrous moment.",
+        "info": " Encounter Fear , Martial , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10015",
+        "name": "Shattering Blow",
+        "type": "dailypower",
+        "level": "Siegebreaker Attack 20",
+        "description": "Your weapon crashes into the foe, splitting it wide and leaving it gasping as its vitality sprays the air.",
+        "info": " Daily Martial , Reliable , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10016",
+        "name": "Brutal Momentum",
+        "type": "encounterpower",
+        "level": "Siegebreaker Utility 12",
+        "description": "Your attacks fall with such fury that your enemy cannot possibly defend against them all.",
+        "info": " Encounter Martial , Stance Minor Action Personal "
+    },
+    {
+        "id": "10017",
+        "name": "Spirit Beckoned",
+        "type": "encounterpower",
+        "level": "Shyran Spiritblade Attack 11",
+        "description": "As you strike your foe with your blade, your spirit companion senses its weakness.",
+        "info": " Encounter Primal , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10018",
+        "name": "Spiritspell Assault",
+        "type": "dailypower",
+        "level": "Shyran Spiritblade Attack 20",
+        "description": "You charge your blade with arcane energy, and as you strike, you focus another spell through your spirit companion.",
+        "info": " Daily Arcane , Force , Primal , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10019",
+        "name": "One with the Blade",
+        "type": "dailypower",
+        "level": "Shyran Spiritblade Utility 12",
+        "description": "You coax your spirit companion into your blade, making your attacks more precise.",
+        "info": " Daily Primal , Spirit Minor Action Personal "
+    },
+    {
+        "id": "10020",
+        "name": "Deepdark Strike",
+        "type": "encounterpower",
+        "level": "Underchasm Darkwatcher Attack 11",
+        "description": "Your weapon is wreathed in an impenetrable blackness, which darkens your enemy’s eyes when you strike.",
+        "info": " Encounter Arcane , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10021",
+        "name": "Form of the Umber Hulk",
+        "type": "dailypower",
+        "level": "Underchasm Darkwatcher Attack 20",
+        "description": "Your eyes take on an insectlike appearance, you sprout antennae from atop your head, and a pair of sharp mandibles grows out from your mouth. At the moment you choose, you can gaze upon your enemies and sow confusion in their ranks.",
+        "info": " Daily Polymorph , Primal Minor Action Personal "
+    },
+    {
+        "id": "10023",
+        "name": "Cursefire Light",
+        "type": "dailypower",
+        "level": "Underchasm Darkwatcher Utility 12",
+        "description": "Your body is ablaze in an eerie green flame that feeds off your curses, bolstering you.",
+        "info": " Daily Arcane , Stance Minor Action Personal "
+    },
+    {
+        "id": "10024",
+        "name": "Sorcerer's Fury",
+        "type": "encounterpower",
+        "level": "Dragonfoe Ragespell Attack 11",
+        "description": "A burst of energy erupts from your blade as you plunge it into your enemy, pushing away those near it.",
+        "info": " Encounter Arcane , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10025",
+        "name": "Arcane Overload",
+        "type": "dailypower",
+        "level": "Dragonfoe Ragespell Attack 20",
+        "description": "You charge your weapon with crackling arcane power. When your attack lands, the foe is awash in an explosion of withering energy, and the residual energy envelops your weapon.",
+        "info": " Daily Arcane , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10026",
+        "name": "Resilient Denial",
+        "type": "dailypower",
+        "level": "Dragonfoe Ragespell Utility 12",
+        "description": "After you are hit by a particularly devastating attack, you channel your fury and attune your arcane energies to resist another such strike.",
+        "info": " Daily Arcane Immediate Reaction Personal "
+    },
+    {
+        "id": "10030",
+        "name": "Deathly Retort",
+        "type": "encounterpower",
+        "level": "Avenging Haunt Attack 11",
+        "description": "Your soul lashes out with necrotic energy at one who would harm you.",
+        "info": " Encounter Necrotic Immediate Reaction Close burst 20 "
+    },
+    {
+        "id": "10031",
+        "name": "Haunting Form",
+        "type": "dailypower",
+        "level": "Avenging Haunt Utility 12",
+        "description": "You adopt a ghostly form to achieve your vengeful aims.",
+        "info": " Daily Minor Action Personal "
+    },
+    {
+        "id": "10032",
+        "name": "Death Locus",
+        "type": "dailypower",
+        "level": "Avenging Haunt Attack 20",
+        "description": "After an initial burst of black, life-sapping energy, your body is flooded with a killing darkness that is attracted to those it initially touched.",
+        "info": " Daily Necrotic Standard Action Area burst 1 within 10 "
+    },
+    {
+        "id": "10033",
+        "name": "Diamond Body",
+        "type": "encounterpower",
+        "level": "Monk Utility 22",
+        "description": "Your incredible speed and resilience, born from your mastery of psionic magic, allow you to shrug off a deadly attack.",
+        "info": " Encounter Psionic Immediate Interrupt Personal "
+    },
+    {
+        "id": "10034",
+        "name": "Mist Walker's Step",
+        "type": "encounterpower",
+        "level": "Monk Utility 22",
+        "description": "With the proper focus of your psionic power, even physical obstacles are no match for you.",
+        "info": " Encounter Psionic Minor Action Personal "
+    },
+    {
+        "id": "10035",
+        "name": "Cloud of Sparrows",
+        "type": "encounterpower",
+        "level": "Druid Attack 17",
+        "description": "Sparrows swirl around you, a storm of tiny talons and beaks that rends your foes and then whisks you away.",
+        "info": " Encounter Implement , Primal , Teleportation Standard Action Close burst 2 "
+    },
+    {
+        "id": "10036",
+        "name": "Devouring Swarm",
+        "type": "encounterpower",
+        "level": "Druid Attack 17",
+        "description": "You dispatch pieces of your swarm form to drain blood from your foes to give yourself resilience.",
+        "info": " Encounter Beast Form , Implement , Primal Standard Action Close blast 5 "
+    },
+    {
+        "id": "10037",
+        "name": "Hungry for the Kill",
+        "type": "encounterpower",
+        "level": "Druid Attack 17",
+        "description": "As you shake your enemy’s life loose, you avoid a doom waiting for you.",
+        "info": " Encounter Beast Form , Healing , Implement , Primal Standard Action Melee touch "
+    },
+    {
+        "id": "1004",
+        "name": "Spinning Sweep",
+        "type": "encounterpower",
+        "level": "Fighter Attack 1",
+        "description": "You spin beneath your enemy’s guard with a slashing strike, and then sweep your leg through your foe an instant later, knocking it to the ground.",
+        "info": " Encounter Martial , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10041",
+        "name": "Stormhowler's Strike",
+        "type": "encounterpower",
+        "level": "Warden Attack 13",
+        "description": "Your attack summons up a storm of primal fury that draws in those that try to escape it.",
+        "info": " Encounter Primal , Teleportation , Weapon , Zone Standard Action Close blast 3 "
+    },
+    {
+        "id": "10042",
+        "name": "Icewrought Armor",
+        "type": "encounterpower",
+        "level": "Icewrought Sentinel Utility 12",
+        "description": "A shell of ice spreads across your ally, offering protection even as it freezes a foe that dares to strike.",
+        "info": " Encounter Primal Minor Action Close burst 3 "
+    },
+    {
+        "id": "10043",
+        "name": "Acid Surge",
+        "type": "encounterpower",
+        "level": "Genasi Racial Power",
+        "description": "You dissolve into a bubbling, hissing liquid and surge through your enemies.",
+        "info": " Encounter Acid Move Action Personal "
+    },
+    {
+        "id": "10044",
+        "name": "Firedeath",
+        "type": "encounterpower",
+        "level": "Genasi Racial Power",
+        "description": "As all fires must burn out, so does each attack on you dwindle and die.",
+        "info": " Encounter Immediate Interrupt Personal "
+    },
+    {
+        "id": "10045",
+        "name": "Plaguebearer",
+        "type": "encounterpower",
+        "level": "Genasi Racial Power",
+        "description": "The breath you exhale is not a bearer of seeds and scents, but a carrier of poison and death.",
+        "info": " Encounter Poison Minor Action Personal "
+    },
+    {
+        "id": "10046",
+        "name": "Void Assumption",
+        "type": "encounterpower",
+        "level": "Genasi Racial Power",
+        "description": "You become the void, the absence of all, for just long enough.",
+        "info": " Encounter Minor Action Personal "
+    },
+    {
+        "id": "10047",
+        "name": "Abyssal Rend",
+        "type": "encounterpower",
+        "level": "Enemy of the Abyss Attack 11",
+        "description": "Channeling the Abyss’s evil, your fingertips tear through your foe’s armor and flesh—more so if you can smell its blood.",
+        "info": " Encounter Standard Action Melee touch "
+    },
+    {
+        "id": "10048",
+        "name": "Abyssal Command",
+        "type": "dailypower",
+        "level": "Enemy of the Abyss Attack 20",
+        "description": "As the Abyss stains your bloodline, you corrupt another’s body and mind.",
+        "info": " Daily Charm , Reliable Standard Action Melee touch "
+    },
+    {
+        "id": "10049",
+        "name": "Demonskin Meditation",
+        "type": "dailypower",
+        "level": "Enemy of the Abyss Utility 12",
+        "description": "You wrap yourself in a sheathe of demon’s energy, protecting yourself from a variety of elements.",
+        "info": " Daily Minor Action Personal "
+    },
+    {
+        "id": "10051",
+        "name": "Glimpse of the Void",
+        "type": "encounterpower",
+        "level": "Scion of Absence Attack 11",
+        "description": "Your lightest touch grants the creature the true experience of being without existence.",
+        "info": " Encounter Standard Action Melee touch "
+    },
+    {
+        "id": "10052",
+        "name": "Voidsoul Infliction",
+        "type": "dailypower",
+        "level": "Scion of Absence Attack 20",
+        "description": "All creatures that near you feel the fatal pull of utter dissolution.",
+        "info": " Daily Psychic , Stance Minor Action Personal "
+    },
+    {
+        "id": "10053",
+        "name": "Wearing the Void",
+        "type": "encounterpower",
+        "level": "Scion of Absence Utility 12",
+        "description": "You are nothing; nothing can pierce you or rend you.",
+        "info": " Encounter Immediate Interrupt Personal "
+    },
+    {
+        "id": "10054",
+        "name": "Acid Whirlpool",
+        "type": "encounterpower",
+        "level": "Soul of Erosion Attack 11",
+        "description": "Tainted water flies out from you to strike a foe before you draw it, and your foe, back in to you.",
+        "info": " Encounter Acid Standard Action Close burst 3 "
+    },
+    {
+        "id": "10055",
+        "name": "Corrosive Torrent",
+        "type": "dailypower",
+        "level": "Soul of Erosion Attack 20",
+        "description": "You create a rushing flow of fluid that makes the eyes water and burns the flesh.",
+        "info": " Daily Acid Standard Action Close blast 5 "
+    },
+    {
+        "id": "10056",
+        "name": "Always Falling Rage",
+        "type": "dailypower",
+        "level": "Barbarian Attack 1",
+        "description": "The fury of the waterfall and the relentless push of the waters propels you past any defenses.",
+        "info": " Daily Primal , Rage , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10057",
+        "name": "Bloodseeker's Rage",
+        "type": "dailypower",
+        "level": "Barbarian Attack 1",
+        "description": "As you strike, flashes of spectral teeth and blood-red hide reveal the bloodseeker drake predator spirit that inspires your rage.",
+        "info": " Daily Primal , Rage , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10058",
+        "name": "Skull-Taker's Rage",
+        "type": "dailypower",
+        "level": "Barbarian Attack 1",
+        "description": "The ancient berserker spirit that drives this rage doesn’t care that its presence tears you apart, vein by vein. It wants the skulls of your enemies, no matter how they’ ve tried to wedge themselves into their cowards’ armor.",
+        "info": " Daily Primal , Rage , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10059",
+        "name": "Ambusher's Rage",
+        "type": "dailypower",
+        "level": "Barbarian Attack 5",
+        "description": "Blood calls. The ambush drake’s throaty roar erupts from your throat as you fling yourself around your wounded enemy in a dizzying set-up for the death blow.",
+        "info": " Daily Primal , Rage , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10060",
+        "name": "Carver's Raging Glory",
+        "type": "dailypower",
+        "level": "Barbarian Attack 9",
+        "description": "Your axe rises in time with the ocean’s pounding waves. Your axe falls with power borrowed from each crashing death.",
+        "info": " Daily Primal , Rage , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10061",
+        "name": "Stoneroot Rage",
+        "type": "dailypower",
+        "level": "Barbarian Attack 9",
+        "description": "The power wells up from deep within the unassailable earth.",
+        "info": " Daily Primal , Rage , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10062",
+        "name": "Whisper's Blades Rage",
+        "type": "dailypower",
+        "level": "Barbarian Attack 15",
+        "description": "A shifting aura of moons and stars outlines your form. As blood drips from your blade and from the enemy who never saw your cut coming, you can hear the wicked laughter of the trickster spirit.",
+        "info": " Daily Primal , Rage , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10063",
+        "name": "Fortune's Ravagers Rage",
+        "type": "dailypower",
+        "level": "Barbarian Attack 19",
+        "description": "Sometimes good luck leads directly to bad, and when your foe is lucky enough to make an extraordinarily effective attack, you’re right there to slam that luck back down its throat.",
+        "info": " Daily Primal , Rage , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10066",
+        "name": "Earthquake Dragon's Rage",
+        "type": "dailypower",
+        "level": "Barbarian Attack 5",
+        "description": "The ground shakes, and the air splits. You can barely hear the voices of your friends asking you to call on a different primal spirit to drive your rage.",
+        "info": " Daily Primal , Rage , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10069",
+        "name": "Nightmare Eruption",
+        "type": "atwillpower",
+        "level": "Wizard Attack 1",
+        "description": "You bring forth a nightmare in your foe’s mind and project it out for its comrades to see.",
+        "info": " At-Will Arcane , Illusion , Implement , Psychic Standard Action Ranged 10 "
+    },
+    {
+        "id": "10070",
+        "name": "Radiant Pillar",
+        "type": "encounterpower",
+        "level": "Wizard Attack 3",
+        "description": "You conjure a cylinder of light that illuminates the battlefield, searing the eyes of your foes.",
+        "info": " Encounter Arcane , Evocation , Implement , Radiant , Zone Standard Action Area burst 1 within 10 "
+    },
+    {
+        "id": "10071",
+        "name": "Thunderstaff",
+        "type": "dailypower",
+        "level": "Wizard Attack 5",
+        "description": "As your enemy comes too close, you slam the butt of your staff into the ground, sending a shockwave that knocks it off its feet and far away from you.",
+        "info": " Daily Arcane , Evocation , Implement , Thunder Immediate Interrupt Melee 2 "
+    },
+    {
+        "id": "10072",
+        "name": "Able Companion",
+        "type": "dailypower",
+        "level": "Wizard Utility 6",
+        "description": "You conjure a creature of many hands and feet that aids your allies.",
+        "info": " Daily Arcane , Conjuration Minor Action Ranged 10 "
+    },
+    {
+        "id": "10073",
+        "name": "Tome of Transposition",
+        "type": "dailypower",
+        "level": "Wizard Attack 9",
+        "description": "You open your tome to a page of secrets and flood your foe’s mind with them, causing its weak brain to overload.",
+        "info": " Daily Arcane , Enchantment , Implement , Psychic Standard Action Ranged 20 "
+    },
+    {
+        "id": "10074",
+        "name": "Dimension Switch",
+        "type": "encounterpower",
+        "level": "Wizard Utility 16",
+        "description": "You and your ally teleport into each other’s locations.",
+        "info": " Encounter Arcane , Teleportation Move Action Close burst 10 "
+    },
+    {
+        "id": "10075",
+        "name": "Wand Coupling",
+        "type": "encounterpower",
+        "level": "Wizard Attack 17",
+        "description": "You release a blast of energy from your wand, and as that energy flows outward, it pulses briefly and brightly with a secondary surge of magic.",
+        "info": " Encounter Arcane , Evocation , Implement Standard Action Ranged 10 "
+    },
+    {
+        "id": "10076",
+        "name": "Summon Angel Wretch",
+        "type": "dailypower",
+        "level": "Wizard Attack 19",
+        "description": "A spectral creature composed of numerous wispy black-feathered wings, all joined together at the pinions, attacks with gouts of shadowy noxious gas.",
+        "info": " Daily Arcane , Implement , Necrotic , Poison , Summoning Minor Action Ranged 20 "
+    },
+    {
+        "id": "10077",
+        "name": "Dimensional Journey",
+        "type": "dailypower",
+        "level": "Wizard Utility 22",
+        "description": "You take a step and reappear well away from your starting point.",
+        "info": " Daily Arcane , Teleportation Move Action Personal "
+    },
+    {
+        "id": "10078",
+        "name": "Orb of Doom",
+        "type": "encounterpower",
+        "level": "Wizard Attack 27",
+        "description": "You create a replica of your orb around your foes, trapping them in a crystalline prison.",
+        "info": " Encounter Arcane , Evocation , Implement Standard Action Area burst 3 within 20 "
+    },
+    {
+        "id": "10079",
+        "name": "Knowledge Blast",
+        "type": "encounterpower",
+        "level": "Tome Adept Attack 11",
+        "description": "You hold up your tome and concentrate all your knowledge through it into a beam of pure energy, firing it at your ignorant foe.",
+        "info": " Encounter Arcane , Implement , Psychic Standard Action Ranged 10 "
+    },
+    {
+        "id": "1008",
+        "name": "Steel Serpent Strike",
+        "type": "encounterpower",
+        "level": "Fighter Attack 1",
+        "description": "You lash out with the speed of a striking serpent, hitting your foe in a vulnerable area that hinders its movement.",
+        "info": " Encounter Martial , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10080",
+        "name": "Librus Phantasma",
+        "type": "dailypower",
+        "level": "Tome Adept Attack 20",
+        "description": "You open your tome and your foe flows into the book, where it must navigate through an eldritch labyrinth before returning to reality.",
+        "info": " Daily Arcane , Implement , Reliable Standard Action Ranged 10 "
+    },
+    {
+        "id": "10081",
+        "name": "Ritual Master",
+        "type": "dailypower",
+        "level": "Tome Adept Utility 12",
+        "description": "Your constant study has revealed the secrets of mysteries that archmages haven’t solved.",
+        "info": " Daily Arcane Free Action Personal "
+    },
+    {
+        "id": "10082",
+        "name": "Rictus Grin",
+        "type": "encounterpower",
+        "level": "Avenger Attack 1",
+        "description": "Your features twist in a deathly grimace, striking terror in those around you.",
+        "info": " Encounter Divine , Fear , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10083",
+        "name": "Rotting Wound",
+        "type": "dailypower",
+        "level": "Avenger Attack 5",
+        "description": "Putrescence weeps from the wound you bestow, rotting your enemy from the inside out.",
+        "info": " Daily Divine , Necrotic , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10084",
+        "name": "Decaying Presence",
+        "type": "dailypower",
+        "level": "Avenger Utility 10",
+        "description": "Your presence decays your enemy’s defenses, allowing your prayers to strike without interference.",
+        "info": " Daily Divine Minor Action Personal "
+    },
+    {
+        "id": "10085",
+        "name": "Chains of Letherna",
+        "type": "encounterpower",
+        "level": "Avenger Attack 17",
+        "description": "You invoke your god’s power to bind your enemy in icy chains until you can visit the divine vengeance its presence demands.",
+        "info": " Encounter Cold , Divine , Implement Standard Action Ranged 5 "
+    },
+    {
+        "id": "10086",
+        "name": "Leprous Wound",
+        "type": "dailypower",
+        "level": "Avenger Attack 19",
+        "description": "Your dire strike causes your enemy to fall to pieces.",
+        "info": " Daily Divine , Necrotic , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10087",
+        "name": "Raven Wings",
+        "type": "dailypower",
+        "level": "Avenger Utility 22",
+        "description": "Death’s shroud falls upon you, but your god intercedes and spares you from the approaching doom.",
+        "info": " Daily Divine , Healing , Teleportation No Action Personal "
+    },
+    {
+        "id": "10088",
+        "name": "Curse of Misfortune",
+        "type": "dailypower",
+        "level": "Cleric Attack 1",
+        "description": "Fate intervenes and consigns the enemy to defeat as its attacks fail and its stratagems lead to ruin.",
+        "info": " Daily Divine , Implement , Psychic Standard Action Close burst 3 "
+    },
+    {
+        "id": "10089",
+        "name": "Seized Destiny",
+        "type": "dailypower",
+        "level": "Cleric Utility 6",
+        "description": "You foster courage where fear reigns, and you provide strength where weakness rules.",
+        "info": " Daily Divine Standard Action Close burst 5 "
+    },
+    {
+        "id": "10090",
+        "name": "Union of Three Fates",
+        "type": "encounterpower",
+        "level": "Cleric Attack 13",
+        "description": "Three inky tendrils emerge from your target, and those touched by the malignant appendages learn their fates, for good or ill.",
+        "info": " Encounter Cold , Divine , Healing , Implement , Necrotic Standard Action Ranged 10 "
+    },
+    {
+        "id": "10091",
+        "name": "Breath of the Raven Queen",
+        "type": "dailypower",
+        "level": "Cleric Attack 19",
+        "description": "You release the Raven Queen’s breath to assail your enemies, binding them in black ice to leach strength from their bodies and their souls.",
+        "info": " Daily Cold , Divine , Implement , Necrotic Standard Action Close blast 5 "
+    },
+    {
+        "id": "10092",
+        "name": "Death for Death",
+        "type": "dailypower",
+        "level": "Cleric Utility 22",
+        "description": "You pluck fate’s strings to alter the outcome of your ally’s attack.",
+        "info": " Daily Divine Immediate Interrupt Ranged 5 "
+    },
+    {
+        "id": "10093",
+        "name": "Death's Denial",
+        "type": "encounterpower",
+        "level": "Invoker Utility 2",
+        "description": "Your utterance prevents death from claiming new victims.",
+        "info": " Encounter Divine , Healing , Zone Standard Action Close burst 5 "
+    },
+    {
+        "id": "10094",
+        "name": "Death's Dread Whisper",
+        "type": "encounterpower",
+        "level": "Invoker Attack 7",
+        "description": "Your voice drops to a whisper and from your mouth issues your enemies’ undoing.",
+        "info": " Encounter Divine , Implement Standard Action Close blast 5 "
+    },
+    {
+        "id": "10095",
+        "name": "Vile Plague",
+        "type": "dailypower",
+        "level": "Invoker Attack 15",
+        "description": "At your command, the ground releases ancient plagues once used to harvest new souls for the Lord of the Dead.",
+        "info": " Daily Divine , Implement , Necrotic , Poison Standard Action Area burst 5 within 10 squares "
+    },
+    {
+        "id": "10096",
+        "name": "Vengeful Dead",
+        "type": "dailypower",
+        "level": "Invoker Utility 16",
+        "description": "When your ally falls, you intone a dread word to bind its spirit to the flesh, causing the companion to rise again and fight on your behalf.",
+        "info": " Daily Divine Minor Action Ranged 10 "
+    },
+    {
+        "id": "10097",
+        "name": "Age's Infirmity",
+        "type": "encounterpower",
+        "level": "Invoker Attack 23",
+        "description": "Your command sees the enemy age rapidly, forcing time’s ravages to come crashing in if only for a moment.",
+        "info": " Encounter Divine , Implement , Necrotic Standard Action Area burst 1 within 10 squares "
+    },
+    {
+        "id": "10098",
+        "name": "Harm",
+        "type": "dailypower",
+        "level": "Invoker Attack 29",
+        "description": "You speed your enemy to death’s door by draining its life and vitality with one cruel command.",
+        "info": " Daily Divine , Implement , Necrotic Standard Action Melee touch "
+    },
+    {
+        "id": "10099",
+        "name": "Fortune Spurned Smite",
+        "type": "encounterpower",
+        "level": "Paladin Attack 3",
+        "description": "Your weapon burns with dark flames. What the flames touch becomes craven and fearful, which are traits despised by fortune.",
+        "info": " Encounter Divine , Fear , Necrotic , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "1010",
+        "name": "Knockout",
+        "type": "dailypower",
+        "level": "Rogue Attack 9",
+        "description": "A well-placed blow takes your foe out of the fight.",
+        "info": " Daily Martial , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10100",
+        "name": "Reaper's Harvest",
+        "type": "dailypower",
+        "level": "Paladin Attack 9",
+        "description": "Your weapon parts your enemy’s defenses, letting you claim the bounty of its defeat.",
+        "info": " Daily Divine , Healing , Necrotic , Psychic , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10101",
+        "name": "Frozen Shackles",
+        "type": "encounterpower",
+        "level": "Paladin Attack 17",
+        "description": "Heat flees from your enemy, causing the target to freeze in place.",
+        "info": " Encounter Cold , Divine , Implement Standard Action Ranged 10 "
+    },
+    {
+        "id": "10102",
+        "name": "Visage of Sorrow",
+        "type": "dailypower",
+        "level": "Paladin Attack 19",
+        "description": "You call forth divine power from the Shadowfell, welcoming its power to transform your aspect to one of utter sorrow and grief.",
+        "info": " Daily Divine , Fear , Implement , Psychic Standard Action Close burst 2 "
+    },
+    {
+        "id": "10103",
+        "name": "Grave Smite",
+        "type": "encounterpower",
+        "level": "Paladin Attack 23",
+        "description": "Your smite sends the enemy to the grave.",
+        "info": " Encounter Divine , Necrotic , Weapon Standard Action Melee weapon "
+    },
+    {
+        "id": "10104",
+        "name": "World in Winter",
+        "type": "dailypower",
+        "level": "Paladin Attack 25",
+        "description": "Cold blossoms around you, bringing ice and snow in from the Shadowfell.",
+        "info": " Daily Cold , Divine , Necrotic , Weapon , Zone Standard Action Close burst 1 "
+    },
+    {
+        "id": "10105",
+        "name": "Grave Chill",
+        "type": "encounterpower",
+        "level": "Soul Reaper Attack 11",
+        "description": "When the dead fall, you speed their souls to the Shadowfell.",
+        "info": " Encounter Divine , Implement Immediate Reaction Ranged 5 "
+    },
+    {
+        "id": "10106",
+        "name": "Call of Letherna",
+        "type": "dailypower",
+        "level": "Soul Reaper Attack 20",
+        "description": "A frigid wind moans as it swirls around you, bringing with it the malign atmosphere found only in the Raven Queen’s demesne.",
+        "info": " Daily Cold , Divine , Implement , Necrotic , Zone Standard Action Close burst 5 "
+    }
+]
