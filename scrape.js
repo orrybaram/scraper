@@ -50,6 +50,8 @@ function readFiles() {
 
 			console.log($(el).children()[0].next.data)
 
+			console.log($(el).children()[0].next.data)
+
 			if (value.indexOf(':') > -1 && value.indexOf(':') < 10) {
 				var key = $el.find('b').text()
 				console.log('yooo')
