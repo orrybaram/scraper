@@ -6,20 +6,21 @@ var powers = [];
 var path = "/Users/orrybaram/Google Drive/compendium/Power/";
 var files = [];
 
+
 fs.readdir(path, function(err, _files) {
 	if (err) throw err;
 	files = _files;
 	readFiles();
 });
 
-//9381 last count matches files.length!
 
 function readFiles() {
-
-	for (var i = files.length - 1; i >= 0; i--) {
-		var file = files[i]
 	
-		console.log(i);
+	for (var i = 0; i < files.length; i++) {
+		
+		var file = files[i]
+
+		if (file.indexOf('html') < 0) continue;
 
 		var data = fs.readFileSync(path + file, {'encoding': 'utf8'})
 		var $ = cheerio.load(data);
@@ -34,49 +35,78 @@ function readFiles() {
 			power["name"] = trimString(power_name)
 		})
 
-		if($('h1').eq(1)) {
-			power["secondary_attack"] = trimString($('h1').eq(1).text());
-		}
-
-
-		if(power['name'] !== "Force Orb") continue;
-
-
-
 		power["type"] = $('h1').attr('class');
-		
 		power["level"] = trimString($('.level').text());
 		power["description"] = trimString($('.flavor').first().text());
 		power["info"] = removeLinebreaks(removeWhiteSpaces($('.powerstat').first().text()))
-
+		power["primary"] = {};
+		
 		$('p').not('.publishedIn').each(function(i, el) {
 
 			var $el = $(el);
 			var key = null;
-			var value = $el.children()[0].next.data;
+			var value = ''
 
-			console.log(value)
+			$el.contents().each(function() {
+				if(this.nodeType === 3){
+			    	value += this.data;
+			    }	
+			})
+			value = trimString(value);
 			
 			if (value.indexOf(':') > -1 && value.indexOf(':') < 10) {
 				var key = $el.find('b').text().toLowerCase()
-			} else {
-				power['secondary_info'] = removeLinebreaks(removeWhiteSpaces($el.text()));
-			}
+			} 
 
 			if (key) {
-				if(power[key]) key = key + "2";
-
+				if(power['primary'][key]) key = key + "2";
 				key = trimString(key).replace(' ', '_');
-				power[key] = trimString(value).substr(2);	
+				power['primary'][key] = trimString(value).substr(2);	
+			}
+
+			if($el.next()[0].name === 'br') {
+				return false;
 			}
 		})
 
-		
+		if($('h1').eq(1)) {
+			power["secondary"] = {};
+			power["secondary_attack"] = trimString($('h1').eq(1).text());
+
+			$('h1').eq(1).nextAll('p').not('.publishedIn').each(function(i, el) {
+				var $el = $(el);
+				var key = null;
+				var value = ''
+
+				$el.contents().each(function() {
+					if(this.nodeType === 3){
+				    	value += this.data;
+				    }	
+				})
+				value = trimString(value);
+				
+				if (value.indexOf(':') > -1 && value.indexOf(':') < 10) {
+					var key = $el.find('b').text().toLowerCase()
+				} else if(value.length > 1) {
+					power['secondary_info'] = removeLinebreaks(removeWhiteSpaces($el.text()));
+				}
+
+
+				if (key) {
+					if(power['secondary'][key]) key = key + "2";
+					key = trimString(key).replace(' ', '_');
+					power['secondary'][key] = trimString(value).substr(2);	
+				}
+			})
+		}
 
 		powers.push(power)
-		fs.writeFileSync('output.json', JSON.stringify(powers, null, 4));
+		console.log(i + ' -- ' + power['name']);
+
 
 	}
+	console.log('Finished!');
+	fs.writeFileSync('output.json', JSON.stringify(powers, null, 4));
 }
 
 
