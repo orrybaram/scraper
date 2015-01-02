@@ -69,7 +69,7 @@ function readFiles() {
 			}
 		})
 
-		if($('h1').eq(1)) {
+		if($('h1').eq(1).length) {
 			power["secondary"] = {};
 			power["secondary_attack"] = trimString($('h1').eq(1).text());
 
