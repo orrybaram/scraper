@@ -32,6 +32,7 @@ function readFiles() {
 		
 		item["id"] = file.replace(".html", "");
 		item['name'] = '';
+		item['html'] = '';
 		
 		$('h1').contents().each(function() {
 			if(this.nodeType === 3){
@@ -39,88 +40,95 @@ function readFiles() {
 		    }	
 		})
 
-		// Fancier Card Format
-		if($('.mistat').length) {
-			item["description"] = trimString($('.miflavor').first().text());
-			item["level"] = trimString($('.milevel').text());
+		item['html'] = $('#detail').html();
 
-			$('p').not('.publishedIn').each(function(i, el) {
-				var $el = $(el);
-				var key = null;
-				var value = ''
+		// $('h1').nextAll().each(function(i, el) {
+		// 	item['html'] += $(el).html();
+		// })
 
-				// If we have a bunch of <b>'s in a <p>
-				if($el.find('b').length > 1) {
-					var keys = [];
-					var values = [];
-					$(el).contents().each(function() {
-						var val = ''
-						if(this.nodeType === 3){
-					    	val += trimString(this.data)
-					    	if(val.length) values.push(val)	
-					    }
-					});
-					$el.find('b').each(function(i, el) {
-						value = trimString(value);
-						key = trimString($(el).text().toLowerCase())
+
+		// // Fancier Card Format
+		// if($('.mistat').length) {
+		// 	item["description"] = trimString($('.miflavor').first().text());
+		// 	item["level"] = trimString($('.milevel').text());
+
+		// 	$('p').not('.publishedIn').each(function(i, el) {
+		// 		var $el = $(el);
+		// 		var key = null;
+		// 		var value = ''
+
+		// 		// If we have a bunch of <b>'s in a <p>
+		// 		if($el.find('b').length > 1) {
+		// 			var keys = [];
+		// 			var values = [];
+		// 			$(el).contents().each(function() {
+		// 				var val = ''
+		// 				if(this.nodeType === 3){
+		// 			    	val += trimString(this.data)
+		// 			    	if(val.length) values.push(val)	
+		// 			    }
+		// 			});
+		// 			$el.find('b').each(function(i, el) {
+		// 				value = trimString(value);
+		// 				key = trimString($(el).text().toLowerCase())
 						
-						console.log(key)
+		// 				console.log(key)
 
-						if (key) {
-							key = trimString(key).replace(' ', '_');
-							keys.push(key)
-						}
-					})
-					item["info"] = _.zipObject(keys, values);
+		// 				if (key) {
+		// 					key = trimString(key).replace(' ', '_');
+		// 					keys.push(key)
+		// 				}
+		// 			})
+		// 			item["info"] = _.zipObject(keys, values);
 
-				} else {
-					$el.contents().each(function() {
-						if(this.nodeType === 3){
-					    	value += this.data;
-					    }	
-					})
+		// 		} else {
+		// 			$el.contents().each(function() {
+		// 				if(this.nodeType === 3){
+		// 			    	value += this.data;
+		// 			    }	
+		// 			})
 
-					value = trimString(value);
-					key = trimString($el.find('b').text().toLowerCase())
-					if (key) {
-						key = trimString(key).replace(' ', '_');
-						item[key] = value;	
-					}
-				}
-			})
-		} 
-		// Shittier Format
-		else {
-			$('br').remove();
-			var values = [];
-			var keys = [];
+		// 			value = trimString(value);
+		// 			key = trimString($el.find('b').text().toLowerCase())
+		// 			if (key) {
+		// 				key = trimString(key).replace(' ', '_');
+		// 				item[key] = value;	
+		// 			}
+		// 		}
+		// 	})
+		// } 
+		// // Shittier Format
+		// else {
+		// 	$('br').remove();
+		// 	var values = [];
+		// 	var keys = [];
 			
-			$('b').each(function(i, el) {
-				var $el = $(el);
-				keys.push(trimString($el.text()))
-			})
+		// 	$('b').each(function(i, el) {
+		// 		var $el = $(el);
+		// 		keys.push(trimString($el.text()).toLowerCase())
+		// 	})
 
-			var idx = -1;
-			$('#detail').contents().each(function(i) {
-				if(this.nodeType === 3 && this.data.length > 5) {
-			    	var text = this.data;
-					// Check for paragraphs
-					if(this.next.type === 'text') {
-						text += this.next.data;
-					}
-					if (values[idx] && trimString(values[idx]).indexOf(trimString(text)) > -1) {
-						// we check to see if the next text 
-						// block exists in the first one, and move on if it is
-					} else {
-						values.push(trimString(text).substr(2));	
-					}	
-					idx += 1;
-				}	
-			})
+		// 	var idx = -1;
+		// 	$('#detail').contents().each(function(i) {
+		// 		if(this.nodeType === 3 && this.data.length > 5) {
+		// 	    	var text = this.data;
+		// 			// Check for paragraphs
+		// 			if(this.next.type === 'text') {
+		// 				text += this.next.data;
+		// 			}
+		// 			if (values[idx] && trimString(values[idx]).indexOf(trimString(text)) > -1) {
+		// 				// we check to see if the next text 
+		// 				// block exists in the first one, and move on if it is
+		// 			} else {
+		// 				values.push(trimString(text).replace(': ', ''));	
+		// 			}	
+		// 			idx += 1;
+		// 		}	
+		// 	})
 
-			info = _.zipObject(keys, values);
-			item['info'] = info;
-		}
+		// 	info = _.zipObject(keys, values);
+		// 	item['info'] = info;
+		// }
 
 		items.push(item)
 		console.log(i + ' -- ' + item['name']);
