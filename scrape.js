@@ -16,9 +16,9 @@ fs.readdir(path, function(err, _files) {
 
 function readFiles() {
 
-	files.forEach(function(file, i) {
-		
-		if (i > 100) return;
+	for (var i = files.length - 1; i >= 0; i--) {
+		var file = files[i]
+	
 		console.log(i);
 
 		var data = fs.readFileSync(path + file, {'encoding': 'utf8'})
@@ -34,81 +34,41 @@ function readFiles() {
 			power["name"] = trimString(power_name)
 		})
 
+		if($('h1').eq(1)) {
+			power["secondary_attack"] = trimString($('h1').eq(1).text());
+		}
+
+
+		if(power['name'] !== "Force Orb") continue;
+
+
+
 		power["type"] = $('h1').attr('class');
 		
 		power["level"] = trimString($('.level').text());
 		power["description"] = trimString($('.flavor').first().text());
 		power["info"] = removeLinebreaks(removeWhiteSpaces($('.powerstat').first().text()))
 
-		$('p').each(function(i, el) {
+		$('p').not('.publishedIn').each(function(i, el) {
 
 			var $el = $(el);
 			var key = null;
 			var value = $el.children()[0].next.data;
+
+			console.log(value)
 			
-			console.log($(el).children()[0].next.data)
-
-			console.log($(el).children()[0].next.data)
-
-			console.log($(el).children()[0].next.data)
-
 			if (value.indexOf(':') > -1 && value.indexOf(':') < 10) {
-				var key = $el.find('b').text()
-				console.log('yooo')
+				var key = $el.find('b').text().toLowerCase()
 			} else {
-				return false;
+				power['secondary_info'] = removeLinebreaks(removeWhiteSpaces($el.text()));
 			}
 
-			console.log(key)
+			if (key) {
+				if(power[key]) key = key + "2";
 
-
-			// if(power[key]) key = key + "2";
-
-			power[key] = trimString(value).substr(2);
-
-
-
-
-			// if($(el).children().first().text().indexOf('Target') > -1) {
-			// 	power["target"] = trimString($(el).children()[0].next.data).substr(2)
-			// } 
-			// else if ($(el).children().first().text().indexOf('Attack') > -1) {
-			// 	power["attack"] = trimString($(el).children()[0].next.data).substr(2)
-			// }
-
-			// else if ($(el).children().first().text().indexOf('Hit') > -1) {
-			// 	var first = trimString($(el).children().text()).substr(4)
-			// 	var last = trimString($(el).children()[0].next.data).substr(2)
-
-			// 	if (power.hit) {
-			// 		power["hit2"] = first + " " + last;
-			// 	} else if (power.hit2) {
-			// 		power["hit3"] = first + " " + last;
-			// 	} else {
-			// 		power["hit"] = first + " " + last;
-			// 	}
-			// }
-			// else if ($(el).children().first().text().indexOf('Miss') > -1) {
-			// 	power["miss"] = trimString($(el).children()[0].next.data).substr(2)
-			// }
-
-			// else if ($(el).children().first().text().indexOf('Special') > -1) {
-			// 	power["special"] = trimString($(el).children()[0].next.data).substr(2)
-			// }
-
-			// else if ($(el).children().first().text().indexOf('Effect') > -1) {
-			// 	power["effect"] = trimString($(el).children()[0].next.data).substr(2)
-			// } 
-			// else if ($(el).children().first().text().indexOf('Secondary Target') > -1) {
-			// 	power["secondary_target"] = trimString($(el).children()[0].next.data).substr(2)
-			// } 
-			// else if ($(el).children().first().text().indexOf('Secondary Attack') > -1) {
-			// 	power["secondary_attack"] = trimString($(el).children()[0].next.data).substr(2)
-			// }
-
-			// else if ($(el).children().first().text().indexOf('Sustain Minor') > -1) {
-			// 	power["secondary_attack"] = trimString($(el).children()[0].next.data).substr(2)
-			// }
+				key = trimString(key).replace(' ', '_');
+				power[key] = trimString(value).substr(2);	
+			}
 		})
 
 		
@@ -116,7 +76,7 @@ function readFiles() {
 		powers.push(power)
 		fs.writeFileSync('output.json', JSON.stringify(powers, null, 4));
 
-	})
+	}
 }
 
 
